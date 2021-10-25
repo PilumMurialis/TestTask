@@ -23,9 +23,26 @@
     line-height: 25px;
 }
 
+.page-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .form__block {
     display: flex;
     justify-content: flex-start;
+}
+
+.form__image__collection {
+    display: flex;
+}
+.form__promo {
+    display: flex;
+}
+.form__slogan {
+    display: flex;
 }
 
 .image {
