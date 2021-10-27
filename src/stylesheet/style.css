@@ -1,6 +1,8 @@
-* {
-    font-family: 'Roboto', 'sans-serif';
+@import "./normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
 
+body {
+    font-family: 'Roboto', 'sans-serif';
 }
 
 .wrapper {
@@ -26,6 +28,10 @@
 .block__description {
     font-size: 18px;
     line-height: 25px;
+}
+
+.wrapper__description {
+    margin-bottom: 20px;
 }
 .block {
     position: relative;
@@ -109,7 +115,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    padding: 30px 30px 14px;
     box-sizing: border-box;
     border: solid 1px #cccccc;
     border-radius: 4px;
@@ -118,9 +124,15 @@
     font-weight: bold;
     font-size: 30px;
     line-height: 35px;
-    margin: 50px 0 25px;
+    margin-bottom: 30px;
 }
-.test__button {
+
+.test__button__holder {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.test__item {
     box-sizing: border-box;
     border: none;
     padding: 20px 72px;
@@ -129,12 +141,13 @@
     margin-bottom: 56px;
     cursor: pointer;
     transition: 0.11s ease;
+    width: calc(50% - 14px);
 }
-.test__button:hover {
+.test__item:hover {
     transform: scale(0.98);
 }
 
-.test__button:not(:last-child) {
+.test__item:not(:last-child) {
     margin-right: 26px;
 }
 
@@ -142,5 +155,28 @@
     color: #9D9D9D;
     font-size: 18px;
     line-height: 18px;
-    margin-bottom: 16px;
+}
+
+.hide .main__wrapper {
+    display: none;
+}
+
+.hide .form__block__promo {
+    display: none;
+}
+
+.hide .form__block__footer {
+    display: none;
+}
+.hide .form__block {
+    justify-content: center;
+    margin-top: 36px;
+}
+
+.hide .form__block__slogan {
+    text-align: center;
+}
+
+.hide .test__title {
+    text-align: center;
 }

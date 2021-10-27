@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <title>Дата смерти 2021</title>
     <link href="stylesheet/style.css" rel="stylesheet">
-    <link href="node_modules/normalize.css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
 <section class="page-main main">
-    <div class="wrapper">
-        <div class="main__block block">
+    <div class="main__wrapper wrapper">
+        <div class="wrapper__block block">
             <h2 class="block__title">Хотите узнать, когда Вы покинете этот Мир и при каких обстоятельствах?</h2>
+        </div>
+        <div class="wrapper__description">
             <span class="block__description">Позвольте нам раскрыть точную дату, а также предшествующую этому событию причину.</span>
         </div>
     </div>
@@ -31,12 +32,12 @@
                 </span>
             </div>
         </div>
-        <div class="form__block__slogan">
-            Многие не верят предсказаниям и мы решили доказать, - прогноз может изменить жизнь каждого!
-        </div>
-        <div class="form__block__footer">
-            Вы, конечно, умрете. И все, с кем вы знакомы, тоже однажды умрут.
-        </div>
+            <div class="form__block__slogan">
+                Многие не верят предсказаниям и мы решили доказать, - прогноз может изменить жизнь каждого!
+            </div>
+            <div class="form__block__footer">
+                Вы, конечно, умрете. И все, с кем вы знакомы, тоже однажды умрут.
+            </div>
     </div>
 </section>
 <section class="page-form__test test">
@@ -45,13 +46,20 @@
             <span class="test__title">
                 Боитесь ли вы умирать?
             </span>
-            <div class="test__buttons">
-                <button type="button" class="test__button button__confirm">Да</button>
-                <button type="button" class="test__button button__cancel">Нет</button>
+            <div class="test__button__holder">
+                <button type="button" class="test__item">Да</button>
+                <button type="button" class="test__item">Нет</button>
             </div>
-            <span class="test__counter">Вопрос 1 - 5</span>
+            <span class="test__counter">
+                Вопрос
+                <span>
+                    1
+                </span>
+                    - 5
+            </span>
         </div>
     </div>
 </section>
+<script src="js/script.js"></script>
 </body>
 </html>
